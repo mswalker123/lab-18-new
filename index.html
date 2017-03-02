@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Lab 18: Angular App</title>
+</head>
+<body ng-app="myMod">
+  <div class="container">
+    <div class="row text-center">
+      <div our-header ></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+        <div class="col-md-8">
+          <div class="content">
+              <a href="#/weather">Weather</a>
+              <a href="#/fizzbuzz">FizzBuzz</a>
+              <br />
+              <div class="view">
+            
+              <ng-view></ng-view>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+          <br>
+      </div>
+    </div>
+    <div class="row text-center">
+      <our-footer></our-footer>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/module.js"></script>
+  <script src="js/fizzbuzz/fizzbuzzController.js"></script>
+  <script src="js/fizzbuzz/fizzbuzzFactory.js"></script>
+  <script src="js/weather/weatherController.js"></script>
+  <script src="js/weather/weatherFactory.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 18</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body ng-app = 'myMod'>
+
+    <div our-header ></div>
+
+    <button type = "button"> <a href="#/weather"> Weather </a></button>
+    <button type = "button"> <a href="#/fizzbuzz"> FizzBuzz </a> </button><br>
+
+
+    <ng-view></ng-view>
+
+    <our-footer></our-footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src="js/module.js"></script>
+    <script src="js/fizzbuzz/fizzbuzzController.js"></script>
+    <script src="js/fizzbuzz/fizzbuzzFactory.js"></script>
+    <script src="js/weather/weatherController.js"></script>
+    <script src="js/weather/weatherFactory.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html> -->

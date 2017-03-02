@@ -1,0 +1,12 @@
+<h3>Weather Check</h3><img src = "img/weather.png" align="left"/>
+<p>
+  Enter a city and state to check the current temerature in fahrenheit and the current weather.
+</p>
+<input type="text" ng-model="inputCity" placeholder="Enter city" />
+<input type="text" ng-model="inputState" placeholder="Enter state" />
+<button ng-click="findWeather(inputCity, inputState)">Get Weather</button>
+<div ng-show="display">
+  <p>
+    The current temperature in {{inputCity}} is {{results.temp}} degrees F, and the weather is {{results.weather}}.
+  </p>
+</div>
